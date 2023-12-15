@@ -1,4 +1,4 @@
-# Döme Barna Portfolio
+## Personal Portfolio
 
 
 This website was built on the template provided by html5up and @ajlkn. Thank you! 
