@@ -4,8 +4,9 @@
 This website is to give a brief introduction through my data focused projects.
 
 
+
 Credits: 
-Template provided by html5up and @ajlkn. Thank you! 
+Template provided by html5up and @ajlkn. Thank you!
 
 Demo Images:
 		Unsplash (unsplash.com)
