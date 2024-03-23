@@ -1,9 +1,22 @@
+/* -----------------------------------------------
+/* How to use? : Check the GitHub README
+/* ----------------------------------------------- */
+
+/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
+/*
+particlesJS.load('particles-js', 'particles.json', function() {
+  console.log('particles.js loaded - callback');
+});
+*/
+
+/* Otherwise just put the config content (json): */
+
 particlesJS('particles-js',
   
 {
   "particles": {
     "number": {
-      "value": 20,
+      "value": 80,
       "density": {
         "enable": true,
         "value_area": 473.4885849793636
@@ -13,27 +26,27 @@ particlesJS('particles-js',
       "value": "#c88f07"
     },
     "shape": {
-      "type": "image",
+      "type": "circle",
       "stroke": {
-        "width": 3,
-        "color": "#0E142C"
+        "width": 0,
+        "color": "#000000"
       },
       "polygon": {
         "nb_sides": 5
       },
       "image": {
-        "src": "images/snowflake.png",
+        "src": "images/bg.jpg",
         "width": 100,
         "height": 100
       }
     },
     "opacity": {
-      "value": 1,
+      "value": 0.5,
       "random": false,
       "anim": {
-        "enable": true,
-        "speed": 2,
-        "opacity_min": 0,
+        "enable": false,
+        "speed": 1,
+        "opacity_min": 0.1,
         "sync": false
       }
     },
@@ -41,31 +54,31 @@ particlesJS('particles-js',
       "value": 3,
       "random": true,
       "anim": {
-        "enable": true,
-        "speed": 2,
-        "size_min": 0.5,
+        "enable": false,
+        "speed": 40,
+        "size_min": 0.1,
         "sync": false
       }
     },
     "line_linked": {
-      "enable": false,
-      "distance": 50,
+      "enable": true,
+      "distance": 150,
       "color": "#ffffff",
-      "opacity": 0.6,
+      "opacity": 0.19728691040806817,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 5,
-      "direction": "bottom",
-      "random": true,
+      "speed": 1.8,
+      "direction": "none",
+      "random": false,
       "straight": false,
       "out_mode": "out",
       "bounce": false,
       "attract": {
-        "enable": true,
-        "rotateX": 6234,
-        "rotateY": 6155
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
       }
     }
   },
@@ -74,11 +87,11 @@ particlesJS('particles-js',
     "events": {
       "onhover": {
         "enable": true,
-        "mode": "bubble"
+        "mode": "repulse"
       },
       "onclick": {
         "enable": true,
-        "mode": "repulse"
+        "mode": "push"
       },
       "resize": true
     },
@@ -90,15 +103,15 @@ particlesJS('particles-js',
         }
       },
       "bubble": {
-        "distance": 100,
-        "size": 3.5,
+        "distance": 400,
+        "size": 40,
         "duration": 2,
-        "opacity": 100,
+        "opacity": 8,
         "speed": 3
       },
       "repulse": {
         "distance": 150,
-        "duration": 0.1
+        "duration": 0.4
       },
       "push": {
         "particles_nb": 4
